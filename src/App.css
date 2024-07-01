@@ -19,11 +19,3 @@
   align-items: center;
   gap: 20px;
 }
-
-.btn button {
-  padding: 10px 20px;
-  background-color: antiquewhite;
-  border: none;
-  box-shadow: 2px 8px 21px -2px #777777;
-  border-radius: 10px;
-}

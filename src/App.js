@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { getAllPokemon, getPokemon } from "./utils/pokemon";
 import Card from "./components/Card/Card";
 import Navbar from "./components/Navbar/Navbar";
+import Button from "@mui/material/Button";
 
 function App() {
   const initialURL = "https://pokeapi.co/api/v2/pokemon";
@@ -73,8 +74,8 @@ function App() {
               })}
             </div>
             <div className="btn">
-              <button onClick={handlePrevPage}>前へ</button>
-              <button onClick={handleNextPage}>次へ</button>
+              <Button variant="contained" onClick={handlePrevPage} size="large">Prev</Button>
+              <Button variant="contained" onClick={handleNextPage} size="large">Next</Button>
             </div>
           </>
         )}
